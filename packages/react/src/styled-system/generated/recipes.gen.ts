@@ -1229,7 +1229,8 @@ export type ColorPickerSlot =
   | "view"
 
 export interface ColorPickerVariant {
-  size?: boolean
+  /** @default "md" */
+  size?: "xs" | "sm" | "md" | "lg" | "xl"
 }
 
 export type ColorPickerVariantProps = {
